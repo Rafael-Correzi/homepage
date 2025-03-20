@@ -8,13 +8,22 @@
 <body>
   <div class="page-wrapper">
     <header>
-      <div>
-        <img src="./svgs/logo-placeholder.svg" alt="Logo placeholder">
-        <nav>
-          <button>
+      <div class="barra-superior">
+        <img src="./svgs/logo-placeholder.svg" alt="Logo placeholder" class="logo">
+        <search>
+          <form action="" class="pesquisa">
+            <label for="barra-pesquisa" class="hide">Pesquisar imóvel</label>
+            <input type="text" id="barra-pesquisa" placeholder="Pesquisar imóvel">
+            <button type="submit" class="botao-pesquisa"><img src="./svgs/pesquisa.svg" alt="Pesquisar"></button>
+          </form>
+        </search>
+        <div class="menu-container">
+          <button id="abrir-dropdown">
             Menu
           </button>
-          <ul id="dropdown">
+        </div>
+        <nav>
+          <ul id="dropdown" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>

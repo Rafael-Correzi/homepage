@@ -50,6 +50,12 @@ html {
   box-sizing: inherit;
 }
 
+/* */ 
+
+:root {
+  --largura: 100%;
+}
+
 .hide {
   border: 0;
   clip: rect(0 0 0 0);
@@ -63,14 +69,59 @@ html {
 
 .barra-superior {
   display: flex;
-  padding: 15px 0;
+  padding: 30px calc(var(--largura) * 0.12);
   background-color: #ffa500;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
+
+.barra-superior > search {
+ flex: 2;
+
+}
+
 .logo {
-  min-height: 44px;
+  flex: 1;
+  height: 48px;
+}
+
+.menu-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+form.pesquisa {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+}
+
+#barra-pesquisa {
+  border: solid #15447A 2px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px #C78100; 
+  background-color: #ffa500;
+  min-height: 40px;
+  min-width: 25vw;
+  font-size: 18px;
+}
+
+#barra-pesquisa::placeholder {
+  color: #555;
+}
+
+.botao-pesquisa {
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.botao-pesquisa > img {
+  width: 20px;
 }
 
 .icone {
