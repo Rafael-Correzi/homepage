@@ -43,7 +43,6 @@ table {
 	border-spacing: 0;
 }
 
-/* */ 
 html {
   box-sizing: border-box;
 }
@@ -51,7 +50,30 @@ html {
   box-sizing: inherit;
 }
 
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.barra-superior {
+  display: flex;
+  padding: 15px 0;
+  background-color: #ffa500;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  min-height: 44px;
+}
 
 .icone {
   width: 20px;
 }
+
