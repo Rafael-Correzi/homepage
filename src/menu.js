@@ -49,7 +49,8 @@ menu.addEventListener("click", () => {
 });
 
 menu.addEventListener("focus", () => {
-  abrirOuFechar();
+  abrirSideNav();
+  fecharHamburguer();
 });
 
 opcoes.forEach(opcao => {
