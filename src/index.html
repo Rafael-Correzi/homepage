@@ -12,8 +12,7 @@
         <img src="./svgs/logo-placeholder.svg" alt="Logo placeholder" class="logo">
         <search>
           <form action="" class="pesquisa">
-            <label for="barra-pesquisa" class="hide">Pesquisar imóvel</label>
-            <input type="text" id="barra-pesquisa" placeholder="Pesquisar imóvel">
+            <input type="text" id="barra-pesquisa" aria-label= "Pesquisar imóvel" placeholder="Pesquisar imóvel">
             <button type="submit" class="botao-pesquisa"><img src="./svgs/pesquisa.svg" alt="Pesquisar"></button>
           </form>
         </search>
@@ -22,20 +21,26 @@
             Menu
             <img src="./svgs/hamburguer.svg" alt="" class="icone" id="hamburguer">
           </button>
-          
         </div>
-        <nav>
-          <ul id="dropdown" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
+        <div class="side-nav" id="side-nav">
+          <button id="fechar-side-nav"><img src="./svgs/fechar.svg" alt="Fechar Menu" class="icone"></button>
+          <nav>
+            <ul id="side-list" class="hide">
+              <li><a href="#" class="opcao">Home</a></li>
+              <li><a href="#" class="opcao">Sobre</a></li>
+              <li><a href="#" class="opcao">Contato</a></li>
+              <li><a href="#" class="opcao">Novos Projetos</a></li>
+              <li><a href="#" class="opcao">Lorem ipsum</a></li>
+              <li><a href="#" class="opcao">Lorem ipsum</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="hero">
         <h1>Lorem ipsum</h1>
         <div class="icone-grupo">
-          <a href="#"><img src="./svgs/facebook.svg" alt="Nosso facebook" class="icone"></a>
+          <!--O primeiro elemento focável após o nav deve fechar o menu quando focado-->
+          <a href="#" id="primeiro-icone"><img src="./svgs/facebook.svg" alt="Nosso facebook" class="icone"></a>
           <a href="#"><img src="./svgs/instagram.svg" alt="Nosso instagram" class="icone"></a>
           <a href="#"><img src="./svgs/twitterX.svg" alt="Nosso X antigo twitter" class="icone"></a>
         </div>
