@@ -76,7 +76,8 @@ input, textarea, button {
 }
 
 .barra-superior {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
   min-height: 12vh;
   padding: 30px var(--padding-lados);
   background-color: #ffa500;
@@ -128,7 +129,6 @@ form.pesquisa {
 
 .menu-container {
   display: flex;
-  flex: 1;
   justify-content: center;
 }
 
@@ -232,23 +232,24 @@ form.pesquisa {
 }
 
 .apresentacao {
-  padding: 15px var(--padding-lados);
+  padding: 10px var(--padding-lados);
   display: grid;
   grid-template-columns: 5fr 1fr;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
+  min-height: 7vh;
   background-color: #15447A;
 }
 
 h1 {
   font-family: "antonioregular";
-  font-size: 50px;
+  font-size: 35px;
   color: white;
   margin-right: 50px;
 }
 
 .icone-grupo {
+  justify-self: right;
 }
 
 .icone-grupo > a {
@@ -260,5 +261,15 @@ h1 {
 }
 
 #frame {
-  height: 78vh;
+  display: flex;
+  height: 81vh;
+  overflow: hidden;
+}
+
+#frame picture {
+  height: 81vh;
+}
+
+picture > img {
+
 }

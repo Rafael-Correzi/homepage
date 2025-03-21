@@ -72,8 +72,12 @@ primeiroIcone.addEventListener("focus", () => {
   fechar();
 })
 
-
-
 botaoX.addEventListener("click", () => {
   fechar();
 })
+
+document.addEventListener("click", (e) => {
+  if (!sideNav.contains(e.target) && !menu.contains(e.target)) {
+    fechar();
+  }
+});
