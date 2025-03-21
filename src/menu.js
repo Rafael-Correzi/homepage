@@ -4,13 +4,14 @@ const sideNav = document.querySelector("#side-nav");
 const sideList = document.querySelector("#side-list");
 const opcoes = document.querySelectorAll(".opcao");
 const primeiroIcone = document.querySelector("#primeiro-icone");
+const botaoX = document.querySelector("#fechar-side-nav");
 
 function hamburguerEstado() {
-  let open = true;
+  let fechado = true;
 
   function alternarEstado() {
-    open ? open = false : open = true;
-    return open;
+    fechado ? fechado = false : fechado = true;
+    return fechado;
   }
 
   return alternarEstado;
@@ -31,36 +32,48 @@ function abrirHamburguer() {
 function fecharSideNav() {
   sideNav.classList.remove("abrir-side-nav");
   sideNav.classList.add("fechar-side-nav");
-  sideList.classList.add("hide");
 }
 
 function abrirSideNav() {
   sideNav.classList.remove("fechar-side-nav");
   sideNav.classList.add("abrir-side-nav");
-  sideList.classList.remove("hide");
 }
 
 function abrirOuFechar() {
   estado() ? (abrirHamburguer(), fecharSideNav()) : (fecharHamburguer(), abrirSideNav());
 }
 
+function fechar() {
+  estado();
+  fecharSideNav();
+  abrirHamburguer();
+}
+
+function abrir() {
+  abrirSideNav();
+  fecharHamburguer();
+}
+
+menu.addEventListener("focus", () => {
+  abrir();
+})
+
 menu.addEventListener("click", () => {
   abrirOuFechar();
 });
 
-menu.addEventListener("focus", () => {
-  abrirSideNav();
-  fecharHamburguer();
-});
-
 opcoes.forEach(opcao => {
   opcao.addEventListener("focus", () => {
-  abrirSideNav();
-  fecharHamburguer();
+    abrir();
   });
 });
 
 primeiroIcone.addEventListener("focus", () => {
-  fecharSideNav();
-  abrirHamburguer();
+  fechar();
+})
+
+
+
+botaoX.addEventListener("click", () => {
+  fechar();
 })
