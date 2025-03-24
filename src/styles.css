@@ -269,23 +269,26 @@ h1 {
   display: flex;
   position: relative;
   max-width: 100vw;
-  max-height: var(--img-altura);
   overflow: hidden;
+  max-height: var(--img-altura);
 }
 
-.img-grupo {
-
+#img-grupo {
+  display: flex;
+  z-index: -1;
 }
 
 #frame picture {
+  
 }
 
 .imagens-carrossel {
-
+  
 }
 
 .imagens-carrossel > img {
   display: block;
+  margin-top: -6vw;
 }
 
 #frame > button {
@@ -309,4 +312,9 @@ h1 {
 
 #frame > button > img {
   min-width: 30px;
+}
+
+#botoes-carrossel {
+  position: absolute;
+  bottom: 20px;
 }
