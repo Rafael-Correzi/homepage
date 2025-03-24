@@ -17,7 +17,24 @@ function hamburguerEstado() {
   return alternarEstado;
 }
 
+function sideNavEstado() {
+  let fechado = true;
+
+  function modificarEstado() {
+    fechado ? fechado = false : fechado = true;
+    return fechado;
+  }
+
+  function checarEstado() {
+    return fechado;
+  }
+  
+  return {modificarEstado, checarEstado};
+}
+
+
 const estado = hamburguerEstado();
+const estadoSideNav = sideNavEstado();
 
 function fecharHamburguer() {
   hamburguer.classList.remove("abrir-hamburguer");
@@ -58,7 +75,8 @@ menu.addEventListener("focus", () => {
   abrir();
 })
 
-menu.addEventListener("click", () => {
+menu.addEventListener("mousedown", () => {
+  estadoSideNav.modificarEstado();
   abrirOuFechar();
 });
 
@@ -72,12 +90,14 @@ primeiroIcone.addEventListener("focus", () => {
   fechar();
 })
 
-botaoX.addEventListener("click", () => {
+botaoX.addEventListener("mousedown", () => {
+  estadoSideNav.modificarEstado();
   fechar();
 })
 
-document.addEventListener("click", (e) => {
-  if (!sideNav.contains(e.target) && !menu.contains(e.target)) {
+document.addEventListener("mousedown", (e) => {
+  if (!estadoSideNav.checarEstado() && !sideNav.contains(e.target) && !menu.contains(e.target)) {
+    estadoSideNav.modificarEstado();
     fechar();
   }
 });
