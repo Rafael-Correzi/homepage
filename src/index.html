@@ -52,9 +52,10 @@
       <section>
         <div id="frame">
           <button id="anterior"><img src="./svgs/anterior.svg" alt="Imagem anterior"></button>
-          <div class="img-grupo">
-          <picture class="imagens-carrossel">
-            <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+          <div id="botoes-carrossel"></div>
+          <div id="img-grupo">
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_432.jpg 432w,
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_601.jpg 601w,
@@ -68,7 +69,8 @@
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1447.jpg 1447w,
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1528.jpg 1528w,
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-            <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px" srcset="
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_927.jpg 927w,
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1068.jpg 1068w,
@@ -82,7 +84,8 @@
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1936.jpg 1936w,
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1956.jpg 1956w,
             ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-            <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px" srcset="
+              <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px"
+                srcset="
             ./imagens/imagem1_l8fkym_c_scale,w_992.jpg 992w,
             ./imagens/imagem1_l8fkym_c_scale,w_1234.jpg 1234w,
             ./imagens/imagem1_l8fkym_c_scale,w_1391.jpg 1391w,
@@ -94,7 +97,7 @@
             ./imagens/imagem1_l8fkym_c_scale,w_2266.jpg 2266w,
             ./imagens/imagem1_l8fkym_c_scale,w_2390.jpg 2390w,
             ./imagens/imagem1_l8fkym_c_scale,w_2398.jpg 2398w">
-            <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
             ./imagens/imagem1_l8fkym_c_scale,w_1200.jpg 1200w,
             ./imagens/imagem1_l8fkym_c_scale,w_1525.jpg 1525w,
             ./imagens/imagem1_l8fkym_c_scale,w_1804.jpg 1804w,
@@ -114,10 +117,10 @@
             ./imagens/imagem1_l8fkym_c_scale,w_4195.jpg 4195w,
             ./imagens/imagem1_l8fkym_c_scale,w_4320.jpg 4320w,
             ./imagens/imagem1_l8fkym_c_scale,w_4400.jpg 4400w" src="./imagens/imagem1_l8fkym_c_scale,w_4400.jpg"
-              alt="">
-          </picture>
-          <picture class="imagens-carrossel">
-            <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+                alt="">
+            </picture>
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_352.jpg 352w,
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_474.jpg 474w,
@@ -136,7 +139,8 @@
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_1516.jpg 1516w,
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_1529.jpg 1529w,
               ./imagens/imagem2_grgnyx_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-            <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px" srcset="
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_855.jpg 855w,
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_937.jpg 937w,
@@ -153,7 +157,8 @@
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_1930.jpg 1930w,
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_1971.jpg 1971w,
               ./imagens/imagem2_grgnyx_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-            <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px" srcset="
+              <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px"
+                srcset="
               ./imagens/imagem2_grgnyx_c_scale,w_992.jpg 992w,
               ./imagens/imagem2_grgnyx_c_scale,w_1095.jpg 1095w,
               ./imagens/imagem2_grgnyx_c_scale,w_1154.jpg 1154w,
@@ -173,7 +178,7 @@
               ./imagens/imagem2_grgnyx_c_scale,w_2361.jpg 2361w,
               ./imagens/imagem2_grgnyx_c_scale,w_2388.jpg 2388w,
               ./imagens/imagem2_grgnyx_c_scale,w_2398.jpg 2398w">
-            <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
               ./imagens/imagem2_grgnyx_c_scale,w_1200.jpg 1200w,
               ./imagens/imagem2_grgnyx_c_scale,w_1497.jpg 1497w,
               ./imagens/imagem2_grgnyx_c_scale,w_1795.jpg 1795w,
@@ -193,10 +198,10 @@
               ./imagens/imagem2_grgnyx_c_scale,w_4253.jpg 4253w,
               ./imagens/imagem2_grgnyx_c_scale,w_4351.jpg 4351w,
               ./imagens/imagem2_grgnyx_c_scale,w_4400.jpg 4400w" src="./imagens/imagem2_grgnyx_c_scale,w_4400.jpg"
-              alt="">
-          </picture>
-          <picture class="imagens-carrossel">
-            <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+                alt="">
+            </picture>
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_566.jpg 566w,
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_802.jpg 802w,
@@ -204,7 +209,8 @@
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_1253.jpg 1253w,
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_1310.jpg 1310w,
                 ./imagens/imagem3_xi7n1v_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-            <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px" srcset="
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_965.jpg 965w,
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_1012.jpg 1012w,
@@ -213,7 +219,8 @@
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_1775.jpg 1775w,
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_1752.jpg 1752w,
                 ./imagens/imagem3_xi7n1v_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-            <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px" srcset="
+              <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px"
+                srcset="
                 ./imagens/imagem3_xi7n1v_c_scale,w_992.jpg 992w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_1214.jpg 1214w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_1416.jpg 1416w,
@@ -221,7 +228,7 @@
                 ./imagens/imagem3_xi7n1v_c_scale,w_1645.jpg 1645w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_1809.jpg 1809w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_2398.jpg 2398w">
-            <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
                 ./imagens/imagem3_xi7n1v_c_scale,w_1200.jpg 1200w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_1493.jpg 1493w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_2026.jpg 2026w,
@@ -241,10 +248,10 @@
                 ./imagens/imagem3_xi7n1v_c_scale,w_4037.jpg 4037w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_4169.jpg 4169w,
                 ./imagens/imagem3_xi7n1v_c_scale,w_4400.jpg 4400w" src="./imagens/imagem3_xi7n1v_c_scale,w_4400.jpg"
-              alt="">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+                alt="">
+            </picture>
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_384.jpg 384w,
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_525.jpg 525w,
@@ -260,7 +267,8 @@
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1499.jpg 1499w,
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1520.jpg 1520w,
                   ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-            <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px" srcset="
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_888.jpg 888w,
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1008.jpg 1008w,
@@ -276,7 +284,7 @@
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1939.jpg 1939w,
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1950.jpg 1950w,
                   ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-            <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
                   ./imagens/imagem4_kb71xj_c_scale,w_1200.jpg 1200w,
                   ./imagens/imagem4_kb71xj_c_scale,w_1454.jpg 1454w,
                   ./imagens/imagem4_kb71xj_c_scale,w_1748.jpg 1748w,
@@ -295,8 +303,8 @@
                   ./imagens/imagem4_kb71xj_c_scale,w_4150.jpg 4150w,
                   ./imagens/imagem4_kb71xj_c_scale,w_4296.jpg 4296w,
                   ./imagens/imagem4_kb71xj_c_scale,w_4400.jpg 4400w" src="./imagens/imagem4_kb71xj_c_scale,w_4400.jpg"
-              alt="">
-          </picture>
+                alt="">
+            </picture>
           </div>
           <button id="proxima"><img src="./svgs/proxima.svg" alt="Próxima imagem"></button>
         </div>

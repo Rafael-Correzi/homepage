@@ -1,7 +1,6 @@
 const menu = document.querySelector("#menu");
 const hamburguer = document.querySelector("#hamburguer");
 const sideNav = document.querySelector("#side-nav");
-const sideList = document.querySelector("#side-list");
 const opcoes = document.querySelectorAll(".opcao");
 const primeiroIcone = document.querySelector("#primeiro-icone");
 const botaoX = document.querySelector("#fechar-side-nav");
