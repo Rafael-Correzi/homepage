@@ -93,3 +93,10 @@ function voltarImg() {
 (function () {
   botoes[0].classList.add("selecionado");
 })();
+
+(function () {
+  setTimeout(() => {
+    trocarImg(1);
+    colorirBotao(1);
+  }, 3000)
+})();
