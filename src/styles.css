@@ -352,7 +352,7 @@ h1 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: calc(3vw + 15px);
+  bottom: calc(3vw + 30px);
   left: 50%;
   transform: translateX(-50%);
   border-top: solid 8px #ffa500;
@@ -394,6 +394,12 @@ h1 {
 #info > span:not(:nth-child(1)) {
   margin-bottom: 10px;
   font-size: 18px;
+}
+
+#pausar {
+  border: none;
+  width: 30px;
+  background-color: transparent;
 }
 
 .segunda-secao {
