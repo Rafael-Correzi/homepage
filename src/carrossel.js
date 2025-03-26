@@ -3,6 +3,7 @@ const imgs = imgGrupo.querySelectorAll(":scope > picture");
 const anterior = document.querySelector("#anterior");
 const proxima = document.querySelector("#proxima");
 const divBotoes = document.querySelector("#botoes-carrossel");
+const info = document.querySelector("#info");
 
 //Adiciona botões para trocar a imagem do carrossel
 (function () {
@@ -29,11 +30,16 @@ function closureImg() {
 const atual = closureImg();
 
 function trocarImg(nova) {
+  setTimeout(() => {
+    info.classList.remove("mudar-info");
+  }, 600)
   const transformIntervalo = 100 / imgs.length ;
   const transform = `${nova * -transformIntervalo}%`;
   //Aplica um transform dinâmico dependendo do número de passos;
   imgGrupo.style.transform = `translateX(${transform})`;
+  abrirInfo();
   atual(nova);
+  info.classList.add("mudar-info");
 }
 
 function colorirBotao(i) {
@@ -66,6 +72,11 @@ function voltarImg() {
   }
 }
 
+function abrirInfo() {
+  
+}
+
+
 
 (function () {
   proxima.addEventListener("mousedown", () => {
@@ -96,7 +107,6 @@ function voltarImg() {
 
 (function () {
   setTimeout(() => {
-    trocarImg(1);
-    colorirBotao(1);
-  }, 3000)
+    proximaImg();
+  }, 2000)
 })();
