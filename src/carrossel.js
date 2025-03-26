@@ -10,6 +10,7 @@ const info = document.querySelector("#info");
   for (let i = 0; i < imgs.length; i++) {
     const botao = document.createElement("button");
     botao.classList.add("botao-carrossel");
+    botao.ariaLabel = `Trocar para a imagem ${i + 1}`;
     divBotoes.appendChild(botao);
   }
 })();
