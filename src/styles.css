@@ -275,8 +275,11 @@ h1 {
 
 #img-grupo {
   display: flex;
-  transition: transform 0.8s ease-in-out;
   z-index: -1;
+}
+
+.img-grupo-transition {
+  transition: transform 0.8s ease-in-out;
 }
 
 #frame picture {
@@ -319,7 +322,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 3vw;
+  bottom: 2vw;
   left: 50%;
   transform: translateX(-50%);
   min-width: 200px;
@@ -330,4 +333,8 @@ h1 {
   width: 26px;
   border: none;
   border-radius: 6px;
+}
+
+.selecionado {
+  background-color: #ffa500;
 }

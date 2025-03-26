@@ -53,7 +53,64 @@
         <div id="frame">
           <button id="anterior"><img src="./svgs/anterior.svg" alt="Imagem anterior"></button>
           <div id="botoes-carrossel"></div>
-          <div id="img-grupo">
+          <div id="img-grupo" class="img-grupo-transition">
+            <!--A primeira picture e a última picture devem ser cópias da última e da primeira, respectivamente-->
+            <!--Deve ter uma maneira melhor de fazer isso, não consigo pensar numa agora-->
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_384.jpg 384w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_525.jpg 525w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_644.jpg 644w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_762.jpg 762w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_948.jpg 948w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1025.jpg 1025w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1072.jpg 1072w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1159.jpg 1159w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1245.jpg 1245w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1307.jpg 1307w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1335.jpg 1335w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1499.jpg 1499w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1520.jpg 1520w,
+                  ./imagens/imagem4_kb71xj_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_888.jpg 888w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1008.jpg 1008w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1079.jpg 1079w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1200.jpg 1200w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1292.jpg 1292w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1370.jpg 1370w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1460.jpg 1460w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1551.jpg 1551w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1629.jpg 1629w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1706.jpg 1706w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1789.jpg 1789w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1939.jpg 1939w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1950.jpg 1950w,
+                  ./imagens/imagem4_kb71xj_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+                  ./imagens/imagem4_kb71xj_c_scale,w_1200.jpg 1200w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_1454.jpg 1454w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_1748.jpg 1748w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_1980.jpg 1980w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_2201.jpg 2201w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_2400.jpg 2400w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_2607.jpg 2607w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_2816.jpg 2816w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3101.jpg 3101w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3302.jpg 3302w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3486.jpg 3486w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3680.jpg 3680w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3862.jpg 3862w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_3957.jpg 3957w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_4014.jpg 4014w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_4150.jpg 4150w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_4296.jpg 4296w,
+                  ./imagens/imagem4_kb71xj_c_scale,w_4400.jpg 4400w" src="./imagens/imagem4_kb71xj_c_scale,w_4400.jpg"
+                alt="">
+            </picture>
             <picture class="imagens-carrossel">
               <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
             ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
@@ -303,6 +360,71 @@
                   ./imagens/imagem4_kb71xj_c_scale,w_4150.jpg 4150w,
                   ./imagens/imagem4_kb71xj_c_scale,w_4296.jpg 4296w,
                   ./imagens/imagem4_kb71xj_c_scale,w_4400.jpg 4400w" src="./imagens/imagem4_kb71xj_c_scale,w_4400.jpg"
+                alt="">
+            </picture>
+            <picture class="imagens-carrossel">
+              <source media="(max-width: 767px)" sizes="(max-width: 1534px) 100vw, 1534px" srcset="
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_190.jpg 190w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_432.jpg 432w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_601.jpg 601w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_746.jpg 746w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_877.jpg 877w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_980.jpg 980w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1082.jpg 1082w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1174.jpg 1174w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1275.jpg 1275w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1359.jpg 1359w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1447.jpg 1447w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1528.jpg 1528w,
+            ./imagens/imagem1_l8fkym_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+              <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px"
+                srcset="
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_927.jpg 927w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1068.jpg 1068w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1193.jpg 1193w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1330.jpg 1330w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1439.jpg 1439w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1532.jpg 1532w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1636.jpg 1636w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1743.jpg 1743w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1851.jpg 1851w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1936.jpg 1936w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1956.jpg 1956w,
+            ./imagens/imagem1_l8fkym_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
+              <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px"
+                srcset="
+            ./imagens/imagem1_l8fkym_c_scale,w_992.jpg 992w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1234.jpg 1234w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1391.jpg 1391w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1549.jpg 1549w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1714.jpg 1714w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1864.jpg 1864w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2008.jpg 2008w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2141.jpg 2141w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2266.jpg 2266w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2390.jpg 2390w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2398.jpg 2398w">
+              <img sizes="(max-width: 4400px) 100vw, 4400px" srcset="
+            ./imagens/imagem1_l8fkym_c_scale,w_1200.jpg 1200w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1525.jpg 1525w,
+            ./imagens/imagem1_l8fkym_c_scale,w_1804.jpg 1804w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2054.jpg 2054w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2290.jpg 2290w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2500.jpg 2500w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2703.jpg 2703w,
+            ./imagens/imagem1_l8fkym_c_scale,w_2886.jpg 2886w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3191.jpg 3191w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3329.jpg 3329w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3432.jpg 3432w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3583.jpg 3583w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3904.jpg 3904w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3961.jpg 3961w,
+            ./imagens/imagem1_l8fkym_c_scale,w_3971.jpg 3971w,
+            ./imagens/imagem1_l8fkym_c_scale,w_4056.jpg 4056w,
+            ./imagens/imagem1_l8fkym_c_scale,w_4195.jpg 4195w,
+            ./imagens/imagem1_l8fkym_c_scale,w_4320.jpg 4320w,
+            ./imagens/imagem1_l8fkym_c_scale,w_4400.jpg 4400w" src="./imagens/imagem1_l8fkym_c_scale,w_4400.jpg"
                 alt="">
             </picture>
           </div>
