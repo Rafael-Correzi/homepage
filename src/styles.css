@@ -120,6 +120,12 @@ form.pesquisa {
   color: #555;
 }
 
+#barra-pesquisa:focus {
+  outline: solid #15447A 2px;
+  background-color: #ffc251;
+}
+
+
 
 .botao-pesquisa {
   position: absolute;
@@ -396,11 +402,6 @@ h1 {
   font-size: 18px;
 }
 
-#pausar {
-  border: none;
-  width: 30px;
-  background-color: transparent;
-}
 
 .segunda-secao {
   z-index: -100;
@@ -413,5 +414,15 @@ section {
 .abaixo-carrossel {
   padding: 20px 0;
   background-color: #15447A;
+}
+
+.segunda-secao {
+  display: flex;
+  justify-content: center;
+  padding: 300px;
+}
+
+.info2 {
+  
 }
 
