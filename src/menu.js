@@ -74,7 +74,7 @@ menu.addEventListener("focus", () => {
   abrir();
 })
 
-menu.addEventListener("mousedown", () => {
+menu.addEventListener("click", () => {
   estadoSideNav.modificarEstado();
   abrirOuFechar();
 });
@@ -89,12 +89,12 @@ primeiroIcone.addEventListener("focus", () => {
   fechar();
 })
 
-botaoX.addEventListener("mousedown", () => {
+botaoX.addEventListener("click", () => {
   estadoSideNav.modificarEstado();
   fechar();
 })
 
-document.addEventListener("mousedown", (e) => {
+document.addEventListener("click", (e) => {
   if (!estadoSideNav.checarEstado() && !sideNav.contains(e.target) && !menu.contains(e.target)) {
     estadoSideNav.modificarEstado();
     fechar();
