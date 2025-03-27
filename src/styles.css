@@ -418,13 +418,13 @@ section {
   overflow-x: hidden;
 }
 
-.abaixo-carrossel {
+.barra {
   padding: 20px 0;
   background-color: #15447A;
 }
 
 .segunda-secao {
-  padding-top: 220px;
+  padding-top: 150px;
 }
 
 h2 {
@@ -437,8 +437,8 @@ h2 {
   border-top: solid #ddd 30px;
   border-bottom: solid #ddd 30px;
   background-color: #ddd;
-  margin-bottom: 300px;
 }
+
 
 .imagem-section{
   max-width: 700px;
@@ -486,3 +486,20 @@ h2 {
   transform: translateX(0%);
 }
 
+.triangulo1 {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #15447A;
+  border-right: 100vw solid transparent;
+}
+
+.barra:nth-of-type(3) {
+  margin-bottom: 150px;
+}
+
+.triangulo2 {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #15447A;
+  border-left: 100vw solid transparent;
+}
