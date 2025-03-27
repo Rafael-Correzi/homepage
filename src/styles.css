@@ -120,7 +120,7 @@ form.pesquisa {
   color: #555;
 }
 
-#barra-pesquisa:focus {
+#barra-pesquisa:focus, #barra-pesquisa:hover {
   outline: solid #15447A 2px;
   background-color: #ffc251;
 }
@@ -132,6 +132,7 @@ form.pesquisa {
   right: 10px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .botao-pesquisa > img {
@@ -150,6 +151,7 @@ form.pesquisa {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -158,8 +160,13 @@ form.pesquisa {
   cursor: pointer;
 }
 
-.menu-container > button > img {
+.menu-container > button:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform ;
+}
 
+.menu-container > button > img {
+  width: 30px;
 }
 
 
