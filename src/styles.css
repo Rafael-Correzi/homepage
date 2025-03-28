@@ -293,6 +293,7 @@ h1 {
 }
 
 #img-grupo {
+  will-change: transform;
   display: flex;
   z-index: -1;
 }

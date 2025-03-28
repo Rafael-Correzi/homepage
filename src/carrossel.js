@@ -31,9 +31,7 @@ function closureImg() {
 const atual = closureImg();
 
 function trocarImg(nova) {
-  setTimeout(() => {
-    info.classList.remove("mudar-info");
-  }, 600)
+  clearTimeout(timeout);
   const transformIntervalo = 100 / imgs.length ;
   const transform = `${nova * -transformIntervalo}%`;
   //Aplica um transform dinâmico dependendo do número de passos;
@@ -81,14 +79,12 @@ function abrirInfo() {
 
 (function () {
   proxima.addEventListener("mousedown", () => {
-    imgGrupo.classList.add("img-grupo-transition");
     proximaImg();
   });
 })();
 
 (function () {
   anterior.addEventListener("mousedown", () => {
-    imgGrupo.classList.add("img-grupo-transition");
     voltarImg();
   });
 })();
@@ -107,7 +103,15 @@ function abrirInfo() {
 })();
 
 (function () {
-  setTimeout(() => {
-    proximaImg();
-  }, 2000)
+  info.addEventListener("animationend", () => {
+    info.classList.remove("mudar-info");
+  })
 })();
+
+
+let timeout = setTimeout(() => {
+  proximaImg();
+}, 2000);
+
+
+
