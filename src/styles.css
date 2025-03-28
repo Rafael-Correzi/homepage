@@ -430,6 +430,10 @@ section {
   overflow-x: hidden;
 }
 
+section:nth-of-type(n + 2) {
+  background-color: #ddd;
+}
+
 .barra {
   padding: 20px 0;
   background-color: #15447A;
@@ -446,9 +450,9 @@ h2 {
 
 .infos {
   display: flex;
-  border-top: solid #ddd 30px;
-  border-bottom: solid #ddd 30px;
-  background-color: #ddd;
+  border-top: solid white 30px;
+  border-bottom: solid white 30px;
+  background-color: white;
 }
 
 
