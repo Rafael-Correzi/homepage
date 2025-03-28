@@ -1,0 +1,16 @@
+#container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 150px clamp(15px, 20% - 100px, 400px);
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+}
+
+.img-card {
+  max-width: 15vw;
+}
