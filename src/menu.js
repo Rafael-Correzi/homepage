@@ -35,14 +35,20 @@ function sideNavEstado() {
 const estado = hamburguerEstado();
 const estadoSideNav = sideNavEstado();
 
-function fecharHamburguer() {
+function fecharMenu() {
   hamburguer.classList.remove("abrir-hamburguer");
   hamburguer.classList.add("fechar-hamburguer");
+  menu.classList.remove("menu-hover");
+  menu.classList.remove("abrir-menu");
+  menu.classList.add("fechar-menu");
 }
 
-function abrirHamburguer() {
+function abrirMenu() {
   hamburguer.classList.remove("fechar-hamburguer");
   hamburguer.classList.add("abrir-hamburguer");
+  menu.classList.add("menu-hover");
+  menu.classList.remove("fechar-menu");
+  menu.classList.add("abrir-menu");
 }
 
 function fecharSideNav() {
@@ -56,18 +62,18 @@ function abrirSideNav() {
 }
 
 function abrirOuFechar() {
-  estado() ? (abrirHamburguer(), fecharSideNav()) : (fecharHamburguer(), abrirSideNav());
+  estado() ? (abrirMenu(), fecharSideNav()) : (fecharMenu(), abrirSideNav());
 }
 
 function fechar() {
   estado();
   fecharSideNav();
-  abrirHamburguer();
+  abrirMenu();
 }
 
 function abrir() {
   abrirSideNav();
-  fecharHamburguer();
+  fecharMenu();
 }
 
 menu.addEventListener("focus", () => {
