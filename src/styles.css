@@ -548,7 +548,8 @@ footer {
   height: var(--footer-altura);
   width: 100vw;
   padding: 15px 5px;
-  background-color: #ffa500;
+  background-color: #15447A;
+  color: white;
 }
 
 .footer-fixed > div {
