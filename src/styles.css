@@ -169,7 +169,7 @@ form.pesquisa {
 
 .menu-hover:hover {
   transform: scale(1.1, 1.1);
-  transition: transform 0.05s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu-container > button > img {
@@ -295,6 +295,14 @@ h1 {
 
 .icone {
   width: 25px;
+}
+
+.icone-grupo .icone {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icone-grupo .icone:hover {
+  transform: scale(1.2);
 }
 
 .primeira-secao {
