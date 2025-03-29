@@ -43,7 +43,7 @@ let contador = contar();
 let alternadorFavorito = alternarFavorito();
 
 function carregarCards() {
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 12; i++) {
     const card = document.createElement("div");
     const img = document.createElement("img");
     const info = document.createElement("div");
