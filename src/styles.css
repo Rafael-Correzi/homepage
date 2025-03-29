@@ -71,7 +71,8 @@ html {
   --padding-lados: clamp(15px, 20% - 100px, 400px);
   --barra-superior-altura: 12vh;
   --apresentaca-altura: 7vh;
-  --img-altura: calc(100vh - var(--barra-superior-altura) - var(--apresentaca-altura));
+  --footer-altura: 6vh;
+  --img-altura: calc(100vh - var(--barra-superior-altura) - var(--apresentaca-altura) - var(--footer-altura));
 }
 
 input, textarea, button {
@@ -531,11 +532,20 @@ h2 {
   width: 30px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: calc(var(--footer-altura) + 20px);
+  background-color: #ffa500;
+}
+
 .footer-fixed {
   position: fixed;
   display: flex;
   justify-content: center;
   bottom: 0;
+  height: var(--footer-altura);
   width: 100vw;
   padding: 15px 5px;
   background-color: #ffa500;
@@ -566,4 +576,31 @@ h2 {
 
 .footer-fixed > div > div > span:nth-child(2) {
   font-weight: bold;
+}
+
+.footer-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 4fr 5fr;
+  color: #15447A;
+}
+
+
+.info-footer {
+  flex-direction: column;
+  grid-column: 1;
+}
+
+.logo-2 {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.info-footer p {
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.info-footer span {
+  white-space: pre-line;
 }
