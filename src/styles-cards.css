@@ -1,8 +1,8 @@
 #container-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  row-gap: 5px;
-  column-gap: 10px;
+  row-gap: 30px;
+  column-gap: 5px;
   margin: 50px calc(9vw - 50px);
   align-items: center;
   justify-items: center;
@@ -115,13 +115,18 @@
 #carregar {
   max-width: 170px;
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   background-color: #15447A;
   color: white;
   padding: 15px 15px 11px 15px;
   font-family: "antonioregular";
   font-size: 25px;
   cursor: pointer;
+  transition: background-color 0.15s linear;
+}
+
+#carregar:hover {
+  background-color: #1c61b1;
 }
 
 .esconder-carregar {
