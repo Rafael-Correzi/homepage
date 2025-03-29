@@ -1,4 +1,5 @@
 import favorito from "./svgs/coracao.svg";
+import favoritoPreenchido from "./svgs/coracao-preenchido.svg";
 
 import card1 from "./imagens/card1.jpg";
 import card2 from "./imagens/card2.jpg";
@@ -27,7 +28,18 @@ function contar() {
   return incrementar;
 }
 
+function alternarFavorito() {
+  let alternador = false;
+
+  function alternar() {
+    return alternador ? alternador = false : alternador = true;
+  }
+
+  return alternar;
+}
+
 let contador = contar();
+let alternadorFavorito = alternarFavorito();
 
 function carregarCards() {
   for (let i = 0; i < 15; i++) {
@@ -38,6 +50,7 @@ function carregarCards() {
     const preco = document.createElement("span");
     const botao = document.createElement("button");
     const favoritar = document.createElement("img");
+    const favoritarPreenchido = document.createElement("img");
     const extras = document.createElement("span");
     const localizacao = document.createElement("span");
     const infoExtra = document.createElement("div");
@@ -61,7 +74,11 @@ function carregarCards() {
     botao.classList.add("favoritar");
     botao.ariaLabel = "Favoritar";
     favoritar.src = favorito;
+    favoritarPreenchido.src = favoritoPreenchido;
     favoritar.classList.add("icone");
+    favoritar.classList.add("coracao");
+    favoritarPreenchido.classList.add("icone");
+    favoritarPreenchido.classList.add("coracao-preenchido");
     extras.classList.add("extras");
     extras.textContent = `Condomínio: R$ ${precoAleatorio(
       3000
@@ -89,6 +106,7 @@ function carregarCards() {
     infosuperior.appendChild(preco);
     infosuperior.appendChild(botao);
     botao.appendChild(favoritar);
+    botao.appendChild(favoritarPreenchido);
     info.appendChild(extras);
     info.appendChild(localizacao);
     info.appendChild(infoExtra);
@@ -101,6 +119,10 @@ function carregarCards() {
     quartos.appendChild(quartosSpan);
     vagas.appendChild(vagasIcone);
     vagas.appendChild(vagasSpan);
+
+    botao.addEventListener("click", () => {
+      alternadorFavorito() ? favoritarPreenchido.classList.add("preencher") : favoritarPreenchido.classList.remove("preencher");
+    })
   }
 }
 

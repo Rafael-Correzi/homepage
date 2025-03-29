@@ -49,6 +49,26 @@
 .favoritar {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.coracao, .coracao-preenchido {
+  position: relative;
+}
+
+.coracao {
+  transform: translateX(100%);
+}
+
+.coracao-preenchido {
+  transform:  scale(0);
+  transition: transform 0.15s ease-out;
+}
+
+
+
+.preencher {
+  transform: scale(1);
 }
 
 .extras {
