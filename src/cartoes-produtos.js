@@ -17,6 +17,18 @@ import carro from "./svgs/carro.svg";
 const container = document.querySelector("#container-cards");
 const botao = document.querySelector("#carregar");
 
+function contar() {
+  let contador = 1;
+
+  function incrementar() {
+    return contador++;
+  }
+
+  return incrementar;
+}
+
+let contador = contar();
+
 function carregarCards() {
   for (let i = 0; i < 15; i++) {
     const card = document.createElement("div");
@@ -55,7 +67,7 @@ function carregarCards() {
       3000
     )} IPTU: R$ ${precoAleatorio(900)}`;
     localizacao.classList.add("localizacao");
-    localizacao.textContent = `Localização ${i}`;
+    localizacao.textContent = `Localização ${contador()}`;
     infoExtra.classList.add("div-icones");
     tamanho.classList.add("icone-info");
     quartos.classList.add("icone-info");
