@@ -63,6 +63,9 @@ function carregarCards() {
     const tamanhoSpan = document.createElement("span");
     const quartosSpan = document.createElement("span");
     const vagasSpan = document.createElement("span");
+
+    let valor = precoAleatorio(7000);
+
     card.classList.add("card");
     info.classList.add("info-imovel");
     infosuperior.classList.add("info-superior");
@@ -70,7 +73,7 @@ function carregarCards() {
     img.loading = "lazy";
     img.src = cardAleatorio();
     preco.classList.add("preco");
-    preco.textContent = `R$ ${precoAleatorio(7000)}`;
+    preco.textContent = `R$ ${valor.toLocaleString(undefined)}`;
     botao.classList.add("favoritar");
     botao.ariaLabel = "Favoritar";
     favoritar.src = favorito;
@@ -80,9 +83,7 @@ function carregarCards() {
     favoritarPreenchido.classList.add("icone");
     favoritarPreenchido.classList.add("coracao-preenchido");
     extras.classList.add("extras");
-    extras.textContent = `Condomínio: R$ ${precoAleatorio(
-      3000
-    )} IPTU: R$ ${precoAleatorio(900)}`;
+    extras.textContent = `Condomínio: R$ ${(Math.trunc(valor / 4)).toLocaleString(undefined)} IPTU: R$ ${Math.trunc(valor / 8).toLocaleString(undefined)}`
     localizacao.classList.add("localizacao");
     localizacao.textContent = `Localização ${contador()}`;
     infoExtra.classList.add("div-icones");
@@ -128,8 +129,9 @@ function carregarCards() {
 
 function precoAleatorio(max) {
   const preco = Math.floor(Math.random() * max + max / 10);
-  return preco.toLocaleString(undefined);
+  return preco;
 }
+
 
 function cardAleatorio() {
   const cards = [
