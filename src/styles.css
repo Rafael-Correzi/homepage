@@ -473,6 +473,7 @@ h2 {
 
 .imagem-section{
   max-width: 700px;
+  object-fit: contain;
 }
 
 .bloco {
@@ -480,11 +481,15 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 calc(10vw - 50px);
+}
+
+.bloco > h2 {
+  font-size: clamp(25px, 2vw, 40px);
 }
 
 .bloco > p {
-  font-size: 22px;
+  font-size: clamp(14px, 1vw, 22px);
   line-height: 30px;
 }
 
@@ -493,8 +498,8 @@ h2 {
   border-radius: 8px;
   background-color: #15447A;
   padding: 10px 5px;
-  max-width: 200px;
-  font-size: 22px;
+  max-width: clamp(100px, 20vw, 200px);
+  font-size: clamp(13px, 2vw, 22px);
   color: white;
   transition: background-color 0.15s linear;
 }
@@ -592,6 +597,7 @@ footer {
   justify-content: center;
   grid-template-columns: 4fr 5fr;
   color: #15447A;
+  padding: 0 100px;
 }
 
 

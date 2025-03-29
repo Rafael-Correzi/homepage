@@ -1,0 +1,11 @@
+@media (max-width: 1200px) {
+  #container-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img-card {
+    max-width: clamp(230px, 30vw, 400px);
+  }
+  .imagem-section {
+    max-width: clamp(300px, 40vw, 700px);
+  }
+}

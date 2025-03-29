@@ -1,6 +1,6 @@
 #container-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 30px;
   column-gap: 5px;
   margin: 50px calc(9vw - 50px);
@@ -17,13 +17,12 @@
 }
 
 .img-wrapper {
-  max-height: 200px;
+  max-height: clamp(130px, 10vw, 200px);
   overflow: hidden;
 }
 
 .img-card {
-  min-width: 350px;
-  max-height: 200px;
+  width: clamp(260px, 20vw, 500px);
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
