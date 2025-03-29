@@ -78,7 +78,12 @@ input, textarea, button {
   font-family: inherit
 }
 
+.wrapper-superior {
+  min-height: var(--barra-superior-altura);
+}
+
 .barra-superior {
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   min-height: var(--barra-superior-altura);
@@ -86,8 +91,8 @@ input, textarea, button {
   background-color: #ffa500;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
-
 
 .barra-superior > search {
   flex: 2;
