@@ -8,4 +8,5 @@
   .imagem-section {
     max-width: clamp(300px, 40vw, 700px);
   }
+
 }
