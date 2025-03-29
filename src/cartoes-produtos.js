@@ -17,6 +17,7 @@ import carro from "./svgs/carro.svg";
 
 const container = document.querySelector("#container-cards");
 const botao = document.querySelector("#carregar");
+const loadingCircle = document.querySelector("#loading-circle");
 
 function contar() {
   let contador = 1;
@@ -166,7 +167,17 @@ function tamanhoAleatorio(max, min, tipo = "tamanho") {
 }
 
 (function() {
-  botao.addEventListener("click", carregarCards);
+  botao.addEventListener("click", () => {
+    botao.classList.add("esconder-carregar");
+    loadingCircle.classList.remove("esconder-carregar");
+    loadingCircle.classList.add("animar-loading");
+    setTimeout(() => {
+      carregarCards();
+      botao.classList.remove("esconder-carregar");
+      loadingCircle.classList.remove("animar-loading");
+      loadingCircle.classList.add("esconder-carregar");
+    }, 900)
+  });
 })();
 
 carregarCards();
