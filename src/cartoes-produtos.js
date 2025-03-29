@@ -45,6 +45,7 @@ let alternadorFavorito = alternarFavorito();
 function carregarCards() {
   for (let i = 0; i < 12; i++) {
     const card = document.createElement("div");
+    const imgWrapper = document.createElement("div");
     const img = document.createElement("img");
     const info = document.createElement("div");
     const infosuperior = document.createElement("div");
@@ -70,6 +71,7 @@ function carregarCards() {
     card.classList.add("card");
     info.classList.add("info-imovel");
     infosuperior.classList.add("info-superior");
+    imgWrapper.classList.add("img-wrapper");
     img.classList.add("img-card");
     img.loading = "lazy";
     img.src = cardAleatorio();
@@ -102,7 +104,8 @@ function carregarCards() {
     vagasSpan.textContent = tamanhoAleatorio(4, 0, "vaga");
 
     container.appendChild(card);
-    card.appendChild(img);
+    card.appendChild(imgWrapper);
+    imgWrapper.appendChild(img);
     card.appendChild(info);
     info.appendChild(infosuperior);
     infosuperior.appendChild(preco);
@@ -124,6 +127,14 @@ function carregarCards() {
 
     botao.addEventListener("click", () => {
       alternadorFavorito() ? favoritarPreenchido.classList.add("preencher") : favoritarPreenchido.classList.remove("preencher");
+    });
+
+    card.addEventListener("mouseover", () => {
+      img.classList.add("img-hover");
+    })
+
+    card.addEventListener("mouseout", () => {
+      img.classList.remove("img-hover");
     })
   }
 }
@@ -179,5 +190,6 @@ function tamanhoAleatorio(max, min, tipo = "tamanho") {
     }, 900)
   });
 })();
+
 
 carregarCards();
