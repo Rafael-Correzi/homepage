@@ -526,3 +526,44 @@ h2 {
   border-bottom: 50px solid #15447A;
   border-left: 100vw solid transparent;
 }
+
+.icone-grande {
+  width: 30px;
+}
+
+.footer-fixed {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  padding: 15px 5px;
+  background-color: #ffa500;
+}
+
+.footer-fixed > div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-fixed h3 {
+  font-size: clamp(18px, calc(2vw), 30px);
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.footer-fixed > div > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+
+.footer-fixed > div > div > span:nth-child(1) {
+  font-size: 13px;
+}
+
+.footer-fixed > div > div > span:nth-child(2) {
+  font-weight: bold;
+}
