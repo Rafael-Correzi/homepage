@@ -1,17 +1,3 @@
-/*<section class="imoveis">
-<div class="imoveis-container">
-  <img src="#" alt="">
-  <div class="info-imovel">
-    <div class="container-visual">
-      <span id="preco">R$4999</span>
-      <button aria-label="Favoritar" ><img src="./svgs/heart-svgrepo-com.svg" class="icone" alt=""></button>
-    </div>
-    <span id="extras">Lorem ipsum</span>
-    <span id="localizacao">Localizacao 1</span>
-  </div>
-</div>
-</section>*/
-
 import favorito from "./svgs/coracao.svg";
 
 import card1 from "./imagens/card1.jpg";
@@ -29,6 +15,7 @@ import quarto from "./svgs/quarto.svg";
 import carro from "./svgs/carro.svg";
 
 const container = document.querySelector("#container-cards");
+const botao = document.querySelector("#carregar");
 
 function carregarCards() {
   for (let i = 0; i < 15; i++) {
@@ -55,6 +42,7 @@ function carregarCards() {
     info.classList.add("info-imovel");
     infosuperior.classList.add("info-superior");
     img.classList.add("img-card");
+    img.loading = "lazy";
     img.src = cardAleatorio();
     preco.classList.add("preco");
     preco.textContent = `R$ ${precoAleatorio(7000)}`;
@@ -140,5 +128,9 @@ function tamanhoAleatorio(max, min, tipo = "tamanho") {
     return num + " " + tipo;
   }
 }
+
+(function() {
+  botao.addEventListener("click", carregarCards);
+})();
 
 carregarCards();

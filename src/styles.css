@@ -504,6 +504,7 @@ h2 {
 }
 
 .triangulo1 {
+  margin-top: 130px;
   width: 0;
   height: 0;
   border-bottom: 50px solid #15447A;
