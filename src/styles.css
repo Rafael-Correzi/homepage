@@ -89,8 +89,14 @@ body {
   overflow-x: hidden;
 }
 
+
 input, textarea, button {
   font-family: inherit
+}
+
+.primeira-secao {
+  z-index: 0;
+  background-color: #15447A;
 }
 
 .wrapper-superior {
@@ -465,6 +471,7 @@ section:nth-of-type(n + 2) {
 }
 
 .barra {
+  margin-top: -1px;
   padding: 20px 0;
   background-color: #15447A;
 }

@@ -119,6 +119,11 @@
     font-size: clamp(16px, 8vw, 40px);
     margin-right: 20px;
   }
+  #info {
+    position: static;
+    transform: none;
+    border-radius: 0;
+  }
   #container-cards {
     grid-template-columns: 1fr;
   }
@@ -164,10 +169,6 @@
   #frame {
     max-width: 4400px;
     margin: 0 auto;
-  }
-  .primeira-secao {
-    z-index: 0;
-    background-color: #ddd;
   }
 }
 
