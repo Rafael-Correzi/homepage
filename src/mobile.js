@@ -1,5 +1,4 @@
 
-
 const logo = document.querySelector("#logo");
 const barra = document.querySelector(".pesquisa");
 const menu = document.querySelector("#menu");
@@ -7,7 +6,7 @@ const menu = document.querySelector("#menu");
 function expandirBarra() {
   const largura = Math.max(document.clientWidth || 0, window.innerWidth);
 
-  if(largura < 540) {
+  if (largura < 540) {
  
     barra.addEventListener("focusin", () => {
       barra.classList.add("expandir-barra");
@@ -21,3 +20,6 @@ function expandirBarra() {
     })
   }
 }
+
+window.onload = expandirBarra();
+window.onresize = () => expandirBarra();

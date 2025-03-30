@@ -113,29 +113,27 @@ let timeout = setTimeout(() => {
   proximaImg();
 }, 2000);
 
-//Não é meu código
+//Código copiado e alterado 
 
 let touchstartX = 0;
 let touchendX = 0;
 
-let zona = document.querySelector('#frame');
+const zona = document.querySelector('#frame');
 
-zona.addEventListener('touchstart', function(event) {
-    event.preventDefault;
-    touchstartX = event.screenX;
+zona.addEventListener('touchstart', (e) => {
+    touchstartX = e.touches[0].screenX;
 });
 
-zona.addEventListener('touchend', function(event) {
-    event.preventDefault;
-    touchendX = event.screenX;
+zona.addEventListener('touchend', (e) => {
+    touchendX = e.changedTouches[0].screenX;
     handleGesto();
 }); 
 
 function handleGesto() {
-    if (touchendX < touchstartX) {
+    if (touchendX > touchstartX) {
         voltarImg();
     }
-    if (touchendX > touchstartX) {
+    if (touchendX < touchstartX) {
         proximaImg();
     }
 }
