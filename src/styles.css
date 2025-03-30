@@ -390,7 +390,7 @@ h1 {
 .botao-carrossel {
   height: 15px;
   width: 26px;
-  border: none;
+  border: solid 1px #ffa500;
   border-radius: 6px;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;

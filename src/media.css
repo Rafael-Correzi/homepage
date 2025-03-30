@@ -78,6 +78,16 @@
 }
 
 @media (max-width: 540px) {
+  .wrapper-superior {
+    min-height: 10vh;
+  }
+  .barra-superior {
+    min-height: 10vh;
+    padding: 15px 5px;
+  }
+  .apresentacao {
+    min-height: 7vh;
+  }
   #menu {
     justify-content: right;
   }
