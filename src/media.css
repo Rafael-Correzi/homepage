@@ -8,6 +8,9 @@
   .imagem-section {
     max-width: clamp(300px, 40vw, 700px);
   }
+  form.pesquisa {
+    max-width: 90%;
+  }
 
 }
 
@@ -21,15 +24,11 @@
   .logo-2 {
     width: 120px;
   }
-  search {
-    flex-grow: 2;
-    flex-shrink: 1;
-  }
   .pesquisa {
-    min-width: 90%;
+    width: 100%;
   }
   #barra-pesquisa {
-    min-width: 100%;
+    width: 100%;
   }
   .footer-fixed h3 {
     clip: rect(0 0 0 0); 
@@ -91,14 +90,26 @@
     white-space: nowrap; 
     width: 1px;
   }
-  search {
-    max-width: clamp(100px, 60vw, 500px);
+  .escondido-visualmente {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+  form {
+    min-width: 90%;
   }
   #barra-pesquisa {
-  
+    min-width: 80px;
   }
   #barra-pesquisa::placeholder {
     opacity: 0;
+  }
+  .expandir-barra {
+    min-width: 100%;
   }
   .side-nav {
     min-width: 100vw;
