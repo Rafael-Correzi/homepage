@@ -5,3 +5,4 @@ import "./scroll.js";
 import "./cartoes-produtos.js";
 import "./styles-cards.css";
 import "./media.css";
+import "./mobile.js";
