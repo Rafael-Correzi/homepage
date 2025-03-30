@@ -90,15 +90,6 @@
     white-space: nowrap; 
     width: 1px;
   }
-  .escondido-visualmente {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
   form {
     min-width: 90%;
   }
@@ -155,3 +146,14 @@
     overflow: auto;
   }
 } 
+
+@media (min-aspect-ratio: 2) {
+  #frame {
+    max-width: 4400px;
+    margin: 0 auto;
+  }
+  .primeira-secao {
+    z-index: 0;
+    background-color: #ddd;
+  }
+}

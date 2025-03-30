@@ -75,6 +75,16 @@ html {
   --img-altura: calc(100vh - var(--barra-superior-altura) - var(--apresentacao-altura) - var(--footer-altura));
 }
 
+.escondido-visualmente {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -350,6 +360,7 @@ h1 {
   padding: 0 18px;
   align-self: center;
 }
+
 
 #frame > button:nth-of-type(1) {
   position: absolute;
