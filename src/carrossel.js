@@ -113,5 +113,29 @@ let timeout = setTimeout(() => {
   proximaImg();
 }, 2000);
 
+//Não é meu código
 
+let touchstartX = 0;
+let touchendX = 0;
 
+let zona = document.querySelector('#frame');
+
+zona.addEventListener('touchstart', function(event) {
+    event.preventDefault;
+    touchstartX = event.screenX;
+});
+
+zona.addEventListener('touchend', function(event) {
+    event.preventDefault;
+    touchendX = event.screenX;
+    handleGesto();
+}); 
+
+function handleGesto() {
+    if (touchendX < touchstartX) {
+        voltarImg();
+    }
+    if (touchendX > touchstartX) {
+        proximaImg();
+    }
+}

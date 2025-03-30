@@ -1,3 +1,5 @@
+
+
 const logo = document.querySelector("#logo");
 const barra = document.querySelector(".pesquisa");
 const menu = document.querySelector("#menu");
@@ -19,6 +21,3 @@ function expandirBarra() {
     })
   }
 }
-
-window.onload = expandirBarra();
-window.onresize = () => expandirBarra();
