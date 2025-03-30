@@ -75,12 +75,15 @@ function carregarCards() {
     img.classList.add("img-card");
     img.loading = "lazy";
     img.src = cardAleatorio();
+    img.alt = "Interior do imóvel";
     preco.classList.add("preco");
     preco.textContent = `R$ ${valor.toLocaleString(undefined)}`;
     botao.classList.add("favoritar");
     botao.ariaLabel = "Favoritar";
     favoritar.src = favorito;
+    favoritar.alt = "";
     favoritarPreenchido.src = favoritoPreenchido;
+    favoritarPreenchido.alt = "";
     favoritar.classList.add("icone");
     favoritar.classList.add("coracao");
     favoritarPreenchido.classList.add("icone");
@@ -95,10 +98,13 @@ function carregarCards() {
     vagas.classList.add("icone-info");
     tamanhoIcone.classList.add("icones-imoveis");
     tamanhoIcone.src = medida;
+    tamanhoIcone.alt = "";
     quartosIcone.classList.add("icones-imoveis");
     quartosIcone.src = quarto;
+    quartosIcone.alt = ""
     vagasIcone.classList.add("icones-imoveis");
     vagasIcone.src = carro;
+    vagasIcone.alt = "";
     tamanhoSpan.textContent = `${tamanhoAleatorio(300, 30, "tamanho")} m²`;
     quartosSpan.textContent = tamanhoAleatorio(5, 1, "quarto");
     vagasSpan.textContent = tamanhoAleatorio(4, 0, "vaga");

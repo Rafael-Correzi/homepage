@@ -78,20 +78,20 @@ function abrirInfo() {
 
 
 (function () {
-  proxima.addEventListener("mousedown", () => {
+  proxima.addEventListener("click", () => {
     proximaImg();
   });
 })();
 
 (function () {
-  anterior.addEventListener("mousedown", () => {
+  anterior.addEventListener("click", () => {
     voltarImg();
   });
 })();
 
 (function () {
   for (let i = 0; i < botoes.length; i++) {
-    botoes[i].addEventListener("mousedown", () => {
+    botoes[i].addEventListener("click", () => {
       trocarImg(i);
       colorirBotao(i);
     });
