@@ -127,7 +127,7 @@
     overflow: hidden;
   }
   .img-card {
-    width: clamp(200px, 90vw, 340px);
+    width: clamp(200px, 90vw, 540px);
   }
   .infos {
     flex-direction: column;
