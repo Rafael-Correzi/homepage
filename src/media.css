@@ -133,6 +133,9 @@
   .imagem-section {
     max-width: 100%;
   }
+  .footer-fixed {
+    min-height: 60px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -155,5 +158,12 @@
   .primeira-secao {
     z-index: 0;
     background-color: #ddd;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
