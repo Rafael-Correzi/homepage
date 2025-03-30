@@ -139,10 +139,6 @@
   background-color: #1c61b1;
 }
 
-.esconder-carregar {
-  opacity: 0;
-}
-
 .animar-loading {
   animation: loading 0.6s linear infinite;
 }

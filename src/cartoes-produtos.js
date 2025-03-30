@@ -179,14 +179,14 @@ function tamanhoAleatorio(max, min, tipo = "tamanho") {
 
 (function() {
   botao.addEventListener("click", () => {
-    botao.classList.add("esconder-carregar");
-    loadingCircle.classList.remove("esconder-carregar");
+    botao.classList.add("escondido-visualmente");
+    loadingCircle.classList.remove("escondido-visualmente");
     loadingCircle.classList.add("animar-loading");
     setTimeout(() => {
       carregarCards();
-      botao.classList.remove("esconder-carregar");
+      botao.classList.remove("escondido-visualmente");
       loadingCircle.classList.remove("animar-loading");
-      loadingCircle.classList.add("esconder-carregar");
+      loadingCircle.classList.add("escondido-visualmente");
     }, 900)
   });
 })();
