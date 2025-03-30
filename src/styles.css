@@ -79,16 +79,6 @@ body {
   overflow-x: hidden;
 }
 
-.escondido-visualmente {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
-}
-
 input, textarea, button {
   font-family: inherit
 }
@@ -98,7 +88,6 @@ input, textarea, button {
 }
 
 .barra-superior {
-  position: fixed;
   display: flex;
   min-width: 100vw;
   min-height: var(--barra-superior-altura);
@@ -144,7 +133,6 @@ form.pesquisa {
   outline: solid #15447A 2px;
   background-color: #ffc251;
 }
-
 
 
 .botao-pesquisa {
@@ -524,17 +512,17 @@ h2 {
 }
 
 .escondido-esq {
-  transform: translateX(-100%);
+  transform: translateX(-90%);
   transition: transform 0.75s ease-out;
 }
 
 .escondido-dir {
-  transform: translateX(100%);
+  transform: translateX(90%);
   transition: transform 0.75s ease-out;
 }
 
 .mostrar {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 
 .triangulo1 {
