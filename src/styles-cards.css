@@ -17,7 +17,7 @@
 }
 
 .img-wrapper {
-  max-height: clamp(130px, 10vw,);
+  max-height: clamp(130px, 50%, 300px);
   overflow: hidden;
 }
 
